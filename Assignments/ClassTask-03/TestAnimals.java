@@ -16,18 +16,34 @@ public class TestAnimals{
         //     b) exhibiting polymorphismusing interfaces and inheritance, 
         //     c) using super to call super class method
     
+
+
     //Calling the method in eact object
-    D.eat();
-    D.walk();
-    C.walk();
-    C.setName("Catto");
-    C.getName();
-    System.out.println(C.getName());
+    // D.eat();
+    // D.walk();//
+    // C.walk();
+    // C.setName("Catto");
+    // C.getName();
+    // System.out.println(C.getName());
+    // A.eat();
+    // A.walk();
+    // E.eat();
+    // P.getName();
+    // P.walk(); not possible
+
+
+    //b) exhibiting polymorphismusing interfaces and inheritance,
+    //Actually what is doing here the code . A is object of type of animal but we are saving new object of fish 
+    // in this way he get all thoese funcution of the fish function...
     A.eat();
     A.walk();
     E.eat();
-    P.getName();
-    // P.walk(); not possible
+    // System.out.println("E.eat() : "  E.eat());
+    
+
+    // using super to call super class method
+
+
 
     }
     
@@ -94,6 +110,7 @@ class Fish extends Animal{
     @Override
     public void walk() {
         // TODO Auto-generated method stub
+        super.walk();   // using super to call super class method
         System.out.println("Fish can't be Walk");
     }
     @Override
